@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="style.css" />
+    <title>Guess The Number😜</title>
+  </head>
+  <body>
+    <main>
+      <section class="border-bottom position-relative py-5 px-3 mb-3 mb-md-5">
+        <h1 class="text-center mb-3">Guess The Number</h1>
+        <p class="text-center mb-4">(guess between 1 to 20)</p>
+        <span class="js-number-box">?</span>
+      </section>
+      <section class="d-flex-center-x-md py-5 px-3">
+        <div class="d-flex-column align-items-center mb-4 me-md-5">
+          <p id="response" class="text-center mb-3">Start guessing</p>
+          <input type="number" class="js-input-field mb-3" />
+          <button id="checkNumber" class="btn">Check!</button>
+        </div>
+        <div class="d-flex-column-center-x-md">
+          <h3 class="text-center-sm mb-3">
+            💯 Tries left: <span id="triesLeft">20</span>
+          </h3>
+          <h3 class="text-center-sm">
+            🏆 Highscore: <span id="highscore">-</span>
+          </h3>
+        </div>
+      </section>
+      <div class="d-flex-center-x">
+        <button id="tryAgain" class="btn d-none">Try again!</button>
+      </div>
+    </main>
+    <script src="game-rules.js"></script>
+  </body>
+</html>
